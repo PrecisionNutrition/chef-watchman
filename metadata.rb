@@ -1,0 +1,6 @@
+name 'watchman'
+maintainer 'James Herdman'
+maintainer_email 'james@precisionnutrition.com'
+source_url 'https://github.com/PrecisionNutrition/chef-watchman'
+recipe 'watchman', 'Installs Watchman'
+version '0.0.1'
