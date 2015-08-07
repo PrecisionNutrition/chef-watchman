@@ -1,2 +1,3 @@
-# chef-watchman
-A Cookbook to Install Watchman
+# Watchman
+
+Installs [Watchman](https://facebook.github.io/watchman/).
