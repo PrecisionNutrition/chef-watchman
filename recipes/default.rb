@@ -1,3 +1,6 @@
+package "libpcre3-dev"
+package "python-dev"
+
 # e.g. https://github.com/facebook/watchman/archive/v3.0.0.tar.gz
 target_url = "https://github.com/facebook/watchman/archive/#{node['watchman']['version']}.tar.gz"
 
