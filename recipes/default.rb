@@ -32,6 +32,6 @@ end
 
 include_recipe 'sysctl::default'
 sysctl_param 'fs.inotify.max_user_watches' do
-  value node['watchman']['max_user_watches']
   only_if { node['watchman']['max_user_watches'] }
+  value node['watchman']['max_user_watches']
 end
