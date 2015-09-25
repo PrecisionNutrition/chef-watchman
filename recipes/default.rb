@@ -1,6 +1,8 @@
 package "libpcre3-dev"
 package "python-dev"
 
+node.default['watchman'] = { version: 'v3.8.0' }
+
 # e.g. https://github.com/facebook/watchman/archive/v3.0.0.tar.gz
 target_url = "https://github.com/facebook/watchman/archive/#{node['watchman']['version']}.tar.gz"
 
@@ -31,6 +33,7 @@ bash 'extract watchman' do
 end
 
 include_recipe 'sysctl::default'
+
 sysctl_param 'fs.inotify.max_user_watches' do
   only_if { node['watchman']['max_user_watches'] }
   value node['watchman']['max_user_watches']
