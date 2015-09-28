@@ -31,7 +31,9 @@ bash 'extract watchman' do
 end
 
 include_recipe 'sysctl::default'
+
 sysctl_param 'fs.inotify.max_user_watches' do
-  value node['watchman']['max_user_watches']
+  value node['watchman'].fetch('max_user_watches', '') # shuts up this recipe
+
   only_if { node['watchman']['max_user_watches'] }
 end

@@ -3,7 +3,7 @@ maintainer 'James Herdman'
 maintainer_email 'james@precisionnutrition.com'
 recipe 'watchman', 'Installs Watchman'
 license 'MIT'
-version '0.0.3'
+version '0.0.4'
 depends 'sysctl'
 
 # Because storing meta data in an executable format is brilliant... Ugh.. Chef :(

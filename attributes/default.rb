@@ -1,2 +1,3 @@
 # Must correspond to a valid release here https://github.com/facebook/watchman/releases
-default['watchman']['version'] = 'v3.7.0'
+default['watchman'] = {}
+default['watchman']['version'] = 'v3.8.0'
